@@ -1,26 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a43">
+<meta name="description" content="Lecture notes, presentations, question banks and learning resources for Robotics & Automation engineering students.">
+<title>Robotics & Automation | Learning Portal</title>
+<style>
+:root{--navy:#102a43;--blue:#176b87;--teal:#18a999;--ink:#203040;--muted:#637381;--paper:#f4f7fb;--line:#dfe7ef;--white:#fff;--gold:#f2b84b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--blue)}.topbar{background:var(--navy);color:white;padding:13px 5vw;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:.2px}.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--teal),#60d4c4);display:grid;place-items:center;color:#062c3a;font-weight:900;font-size:20px}.topbar small{display:block;color:#c4d5e3;font-weight:500;font-size:12px}.toplink{color:#fff;text-decoration:none;border:1px solid #587187;border-radius:9px;padding:8px 12px;font-size:13px}.hero{background:linear-gradient(120deg,#102a43 0%,#176b87 68%,#18a999 130%);color:white;padding:54px 5vw 48px}.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.4fr .6fr;align-items:center;gap:32px}.eyebrow{color:#8ce8d9;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(32px,4.3vw,54px);line-height:1.08;margin:12px 0 16px;max-width:720px}.hero p{color:#d8e8f0;max-width:650px;margin:0 0 24px}.hero-art{justify-self:end;width:min(250px,100%);aspect-ratio:1;border:1px solid #ffffff40;border-radius:28px;background:#ffffff0c;display:grid;place-items:center;position:relative}.orbit{width:145px;height:145px;border:2px solid #8ce8d9;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;width:190px;height:70px;border:1px solid #ffffff70;border-radius:50%;transform:rotate(45deg)}.orbit:after{transform:rotate(-45deg)}.robot{font-size:64px;z-index:1}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:10px;padding:11px 16px;font-weight:750;cursor:pointer}.btn-light{background:white;color:var(--navy)}.btn-outline{border:1px solid #ffffff70;color:white;background:transparent}.container{max-width:1180px;margin:auto;padding:30px 5vw 60px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-4px}.stat{background:white;border:1px solid var(--line);border-radius:14px;padding:17px}.stat strong{display:block;font-size:23px;color:var(--navy)}.stat span{font-size:12px;color:var(--muted)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:34px 0 16px}.section-head h2{margin:0;font-size:24px;color:var(--navy)}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.subject{background:white;border:1px solid var(--line);border-radius:16px;padding:20px;text-align:left;cursor:pointer;transition:.15s;min-height:150px}.subject:hover,.subject.active{border-color:var(--teal);box-shadow:0 8px 24px #102a4310;transform:translateY(-2px)}.subject .sem{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--blue)}.subject h3{margin:9px 0 7px;color:var(--navy);font-size:18px}.subject p{margin:0;color:var(--muted);font-size:13px}.filters{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:10px;margin:18px 0}.filters input,.filters select{width:100%;background:white;border:1px solid #cad6e2;border-radius:10px;padding:12px 13px;color:var(--ink);font:inherit}.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.resource{background:white;border:1px solid var(--line);border-radius:14px;padding:17px;display:flex;gap:14px;align-items:flex-start}.file-icon{width:42px;height:46px;flex:0 0 42px;border-radius:10px;background:#e6f5f2;color:#087d70;display:grid;place-items:center;font-size:20px}.resource h3{margin:0 0 5px;font-size:16px;color:var(--navy)}.resource p{margin:0 0 10px;font-size:13px;color:var(--muted)}.meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}.pill{background:#eef3f8;color:#425b70;border-radius:6px;padding:3px 7px;font-size:11px;font-weight:700}.download{display:inline-block;font-size:13px;font-weight:800;text-decoration:none}.empty{grid-column:1/-1;border:1px dashed #b8c9d7;background:#fff;border-radius:14px;padding:26px;text-align:center;color:var(--muted)}.notice{background:#fff8e8;border:1px solid #f1dca8;border-radius:12px;padding:14px 16px;color:#75571b;font-size:13px;margin-top:18px}.footer{background:#0c2235;color:#c9d8e3;padding:25px 5vw;font-size:13px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.footer strong{color:white}@media(max-width:760px){.hero-inner{grid-template-columns:1fr}.hero-art{display:none}.stats{grid-template-columns:repeat(2,1fr)}.subjects{grid-template-columns:1fr}.filters{grid-template-columns:1fr}.resource-list{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.topbar{padding-inline:4vw}.container{padding-inline:4vw}.hero{padding-inline:4vw}}
+</style>
+</head>
 <body>
-
-<h1>VTU Teaching Materials</h1>
-
-<h2>Welcome</h2>
-
-<p>
-Lecture notes, PPTs, lab manuals and study materials for VTU students.
-</p>
-
-<h2>Subjects</h2>
-
-<ul>
-<h3>Semester7</h3>
-<li>Micro & Nano Robotics</li>
-  
-<h4>Semester5</h4>
-<li>Autonomous Robots</li>
-  
-<h5>Semester3</h5>
-<li>Fundamentals of Robotics & Automation</li>
-</ul>
-
-</body>
-
-</html>
+<header class="topbar"><div class="brand"><div class="logo">R+A</div><div>ROBOTICS & AUTOMATION<small>Student Learning Resources Portal</small></div></div><a class="toplink" href="https://github.com/ksmahesh-stack/VTU-Robotics-Automation-Teaching-Materials" target="_blank" rel="noopener">Repository ↗</a></header>
+<section class="hero"><div class="hero-inner"><div><div class="eyebrow">VTU • Engineering Learning Hub</div><h1>Learn. Explore.<br>Build the future.</h1><p>A single place for lecture notes, presentations, question banks, assignments, video lectures, syllabus and lesson plans for Robotics & Automation students.</p><div class="hero-actions"><a class="btn btn-light" href="#resources">Explore materials ↓</a><a class="btn btn-outline" href="#subjects">Browse subjects</a></div></div><div class="hero-art" aria-hidden="true"><div class="orbit"><div class="robot">⚙</div></div></div></div></section>
+<main class="container">
+<div class="stats"><div class="stat"><strong id="resourceCount">0</strong><span>Resources listed</span></div><div class="stat"><strong>3</strong><span>Semester groups</span></div><div class="stat"><strong>7</strong><span>Resource categories</span></div><div class="stat"><strong>24/7</strong><span>Student access</span></div></div>
+<section id="subjects"><div class="section-head"><div><h2>Browse by subject</h2><p>Select a subject to narrow the resource list.</p></div></div><div class="subjects">
+<button class="subject" data-subject="Micro & Nano Robotics"><span class="sem">Semester 7</span><h3>Micro & Nano Robotics</h3><p>Micro/nano-scale robotics, actuation, sensing and control.</p></button>
+<button class="subject" data-subject="Autonomous Robots"><span class="sem">Semester 5</span><h3>Autonomous Robots</h3><p>Robot autonomy, navigation, perception and planning.</p></button>
+<button class="subject" data-subject="Fundamentals of Robotics & Automation"><span class="sem">Semester 3</span><h3>Fundamentals of Robotics & Automation</h3><p>Core robotics concepts, automation systems and applications.</p></button>
+</div></section>
+<section id="resources"><div class="section-head"><div><h2>Learning materials</h2><p>Search by title, module, subject or resource type.</p></div></div>
+<div class="filters"><input id="search" type="search" placeholder="Search learning materials…" aria-label="Search resources"><select id="subjectFilter" aria-label="Filter by subject"><option value="">All subjects</option><option>Micro & Nano Robotics</option><option>Autonomous Robots</option><option>Fundamentals of Robotics & Automation</option></select><select id="typeFilter" aria-label="Filter by type"><option value="">All resource types</option><option>Lecture Notes</option><option>PPT Presentations</option><option>Question Banks</option><option>Assignments</option><option>Video Lectures</option><option>Syllabus</option><option>Lesson Plans</option><option>Lab Manuals</option></select></div>
+<div id="resourceList" class="resource-list" aria-live="polite"><div class="empty">Loading resources…</div></div>
+<div class="notice"><strong>For students:</strong> Resources will appear here as the faculty adds them. If you need a particular file, contact your course faculty. Always follow the current VTU syllabus and course instructions.</div>
+</section>
+</main>
+<footer class="footer"><div class="footer-inner"><div><strong>Robotics & Automation Learning Portal</strong><br>Teaching and learning resources for engineering students.</div><div>Maintained by K. S. Mahesh • JSS Academy of Technical Education, Bengaluru<br><a style="color:#8ce8d9" href="https://github.com/ksmahesh-stack/VTU-Robotics-Automation-Teaching-Materials">Open-source repository</a></div></div></footer>
+<script>
+const fallback=[];
+let resources=[];
+const list=document.getElementById('resourceList');
+const search=document.getElementById('search'), subjectFilter=document.getElementById('subjectFilter'), typeFilter=document.getElementById('typeFilter');
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function iconFor(t){return t==='PPT Presentations'?'▤':t==='Video Lectures'?'▶':t==='Assignments'?'✎':t==='Question Banks'?'?':t==='Syllabus'?'☷':t==='Lesson Plans'?'▦':'▧';}
+function render(){const q=search.value.toLowerCase().trim(),s=subjectFilter.value,t=typeFilter.value;const filtered=resources.filter(r=>[r.title,r.subject,r.type,r.module,r.description,r.semester].join(' ').toLowerCase().includes(q)&&(!s||r.subject===s)&&(!t||r.type===t));document.getElementById('resourceCount').textContent=resources.filter(r=>r.url).length;list.innerHTML=filtered.length?filtered.map(r=>'<article class="resource"><div class="file-icon" aria-hidden="true">'+iconFor(r.type)+'</div><div><div class="meta"><span class="pill">'+esc(r.semester||'Subject resource')+'</span><span class="pill">'+esc(r.type||'Resource')+'</span>'+(r.module?'<span class="pill">'+esc(r.module)+'</span>':'')+'</div><h3>'+esc(r.title)+'</h3><p>'+esc(r.description||'Learning resource')+'</p>'+(r.url?'<a class="download" href="'+esc(r.url)+'" target="_blank" rel="noopener">Open resource ↗</a>':'<span class="download" style="color:#9a6b15">Resource link to be added</span>')+'</div></article>').join(''):'<div class="empty">No materials match your filters. Try another search or check back later.</div>';}
+[search,subjectFilter,typeFilter].forEach(el=>el.addEventListener('input',render));
+document.querySelectorAll('.subject').forEach(b=>b.addEventListener('click',()=>{subjectFilter.value=b.dataset.subject;document.querySelectorAll('.subject').forEach(x=>x.classList.toggle('active',x===b));render();document.getElementById('resources').scrollIntoView({behavior:'smooth'});}));
+fetch('./resources.json').then(r=>{if(!r.ok)throw Error('resources');return r.json()}).then(data=>{resources=Array.isArray(data)?data:[];render()}).catch(()=>{resources=fallback;list.innerHTML='<div class="empty">Materials could not be loaded. Please refresh the page or contact the portal administrator.</div>';});
+</script>
+</body></html>
