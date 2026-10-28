@@ -1,13 +1,13 @@
 [
   {
-    "id": "sample-1",
-    "title": "Micro & Nano Robotics — add lecture notes",
+    "id": "s7-micro-nano-robotics-module-1-ppt",
+    "title": "Micro & Nano Robotics — Module 1 PPT",
     "semester": "Semester 7",
     "subject": "Micro & Nano Robotics",
-    "type": "Lecture Notes",
-    "description": "Add your PDF notes by editing this sample resource in resources.json.",
-    "url": "",
-    "module": "All modules"
+    "type": "PPT Presentations",
+    "description": "Module 1 lecture presentation for Semester 7.",
+    "url": "files/semester-7/micro-nano-robotics/M1.pptx",
+    "module": "Module 1"
   },
   {
     "id": "sample-2",
