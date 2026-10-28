@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sample-1",
+    "title": "Micro & Nano Robotics — add lecture notes",
+    "semester": "Semester 7",
+    "subject": "Micro & Nano Robotics",
+    "type": "Lecture Notes",
+    "description": "Add your PDF notes by editing this sample resource in resources.json.",
+    "url": "",
+    "module": "All modules"
+  },
+  {
+    "id": "sample-2",
+    "title": "Autonomous Robots — add presentations",
+    "semester": "Semester 5",
+    "subject": "Autonomous Robots",
+    "type": "PPT Presentations",
+    "description": "Add your PowerPoint link or uploaded file path.",
+    "url": "",
+    "module": "All modules"
+  },
+  {
+    "id": "sample-3",
+    "title": "Fundamentals of Robotics & Automation — study resources",
+    "semester": "Semester 3",
+    "subject": "Fundamentals of Robotics & Automation",
+    "type": "Syllabus",
+    "description": "Add the approved syllabus, lesson plans and other learning materials.",
+    "url": "",
+    "module": "All modules"
+  }
+]
